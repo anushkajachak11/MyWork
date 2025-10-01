@@ -1,0 +1,33 @@
+#circle{
+    background-color: rgb(65, 65, 202);
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right:10px;
+}
+.box{
+    /* background-color: white; */
+    height:150px;
+    width:300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1{
+    background-color: rgb(242, 113, 66);
+    height: 50px;
+    width:300px;
+
+}
+.box2{
+    background-color:white;
+    height: 50px;
+    width:300px;
+}
+.box3{
+    background-color:rgb(77, 160, 77);
+    height: 50px;
+    width: 300px;
+}

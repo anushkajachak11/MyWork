@@ -1,0 +1,18 @@
+  /* Japan Flag */
+
+#container{
+    background-color: white;
+    height:200px ;
+    width: 300px;
+    position: relative;
+}
+#circle{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top:50px;
+    border-radius: 50%;
+
+}

@@ -1,0 +1,37 @@
+/* span{
+    color:blueviolet;
+     */
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+h1{
+    background-color: cadetblue;
+    padding:20px;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    /* display: inline; */
+    display: inline-block;
+    border: 10px solid green;
+    box-sizing: content-box;
+}
+h2{
+    background-color:deeppink;
+    /* display: inline; */
+    height:300px;
+    width:300px;
+    /* display: inline-block; */
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+span{
+    /* padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 30px; */
+    background-color: pink;
+    height: 200px;
+    width: 300px;
+    /* display: block; */
+}

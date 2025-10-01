@@ -1,0 +1,39 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    white-space: nowrap;
+
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.081);
+    border:solid 1px rgba(255, 255, 255, 0.081);
+    border-radius: 5px;
+    font-size: 40px;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+}
+p{
+    animation-name: Moving;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes Moving{
+    from{
+         margin-left: 100%;
+
+    }
+    to{
+        margin-left:0%;
+    }
+}

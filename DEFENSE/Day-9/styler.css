@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+h2{
+    background-color: bisque;
+    position: relative;
+    /* left: 100px; */
+    /* left: 50px;
+    right: 40px;
+    bottom:50px; */
+} 
+h3{
+    background-color: darkcyan;
+    position: fixed; 
+    top: 0px;
+    
+}
+h4{
+    background-color: darkorchid;
+    position: sticky;
+    top: 20px;
+}
+p{
+    background-color: deeppink;
+    position: absolute;
+    top:0px;
+    left:50px;
+    right: 10px;
+}

@@ -1,0 +1,28 @@
+    /* tag/element based selection  */
+h1{
+  background-color: rgb(114, 45, 179);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+h2{
+   background-color: cadetblue;
+   font-family: "Story Script", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+  /* class based selection */
+.first{
+     background-color:plum;
+}
+
+   /* grouping based selection */
+.second,#third{
+    background-color: rgb(216, 146, 169);
+}
+
+   /* id based selection */
+#fifth{
+    background-color: rgb(156, 81, 156);
+}

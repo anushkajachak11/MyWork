@@ -1,0 +1,30 @@
+h1{
+    background-color: plum;
+    height: 200px;
+    width: 400px;
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: black; */
+    padding: 10px;
+    /* margin: 20px; */
+    border: solid  black  10px;
+    /* padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px; */
+    /* padding:10px 20px 30px 40px; */
+    padding: 30px 50px;
+
+    margin: 20px 30px 40px 50px;
+    border-radius: 60px;
+}
+h2{
+    background-color: cadetblue;
+    border:5px solid blueviolet;
+    margin:20px;
+}
+p{
+    background-color:palevioletred;
+    border:5px solid gray;
+    padding:20px;
+    margin: 30px;
+}

@@ -1,0 +1,25 @@
+h1{
+    background-color: aquamarine;
+}
+#firstID{
+    background-color: chocolate;
+}
+.classA{
+    background-color: brown;
+}
+/* #firstID{
+    background-color: chocolate;
+    
+} */
+#firstID{
+    background-color:palevioletred;
+    
+}
+
+h1{
+    background-color: chartreuse;
+    background-color: gray;
+}
+h2{
+    background-color: plum !important;
+}

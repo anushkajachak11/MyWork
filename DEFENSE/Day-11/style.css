@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    padding:5px;
+    /* margin: 10px; */
+    background-color: rgb(175, 134, 84);
+    gap:5px;
+}   
+.box{
+    height: 300px; 
+    width: 200px;
+}
+.first{
+    background-color: cadetblue;
+}
+.second{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    /* background-color:darkolivegreen; */
+}
+.child{
+    display: flex;
+    height: 140px; 
+    background-color: darkorchid;
+}

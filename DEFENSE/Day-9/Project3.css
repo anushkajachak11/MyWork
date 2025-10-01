@@ -1,0 +1,26 @@
+      /* Laos Flag */
+#star{
+    background-color: rgb(243, 62, 62);
+    height: 200px;
+    width:300px;
+    position: relative;
+}
+#square{
+    background-color: rgb(37, 37, 230);
+    height: 100px;
+    width:300px;
+    position: absolute;
+    bottom:50px;
+    top:50px;
+
+}
+#circle{
+    background-color: white;
+    border-radius: 50%;
+    height:80px;
+    width:80px;
+    position: absolute;
+    left: 100px;
+    right:100px;
+    top:10px;
+}

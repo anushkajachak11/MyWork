@@ -1,0 +1,39 @@
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    /* height: 1300px; */
+    flex-direction:columnk;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    justify-content:start;
+    align-items:start;
+    height:600px;
+    /* flex-wrap: wrap; */
+    gap:15px;
+
+}
+.Box{
+    height: 100px;
+    width:100px;
+    /* margin:5px; */
+}
+.first{
+    background-color: chocolate;
+    /* flex-grow:3; */
+    flex-basis: 200px;
+}
+.second{
+    background-color: palevioletred;
+    /* flex-grow:2; */
+    flex-shrink: 4;
+    flex-basis: 400px;
+
+}
+.third{
+    background-color: darkgreen;
+    /* flex-grow:4; */
+}
+.fourth{
+    background-color: darkmagenta;
+    /* flex-grow: 1; */
+} 

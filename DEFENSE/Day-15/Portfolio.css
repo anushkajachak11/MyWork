@@ -27,7 +27,6 @@ body{
 .main-content{
     background-color: #2e2e2e;
     border-radius: 15px;
-    height: 90vh;
     border: 1px solid #3a3a3a;
     padding: 40px;
 }
@@ -88,5 +87,68 @@ body{
     height: 24px;
     width: 24px;
     margin-left: 5px;
-    filter: grayscale(1) insert(0.7);
+    filter: grayscale(1) invert(0.7);
+    transition:filter 0.3s  ease;
+}
+.social img:hover{
+    filter: grayscale(0) invert(0);
+}
+
+        /*Main-Content*/
+        /* Navigation */
+#navigation{
+    border-bottom:2px solid #3a3a3a;
+    margin-bottom:20px;
+    padding-bottom:20px;
+}
+nav{
+    display:flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+nav a{
+    text-decoration:none ;
+    color: #a0a0a0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.active,nav a:hover{
+    color: #FFBF00;
+}
+
+/* About Me */
+.heading{
+    color:#e0e0e0;
+    font-size:2rem ;
+    margin-bottom: 10px;
+}
+.line{
+    height: 5px;
+    width: 60px;
+    background-color: #FFBF00;
+    margin-bottom:10px;
+}
+.content{
+    text-align: justify;
+}
+#about{
+     margin-bottom:30px;
+}
+
+      /* Skills */
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 40px;
+}
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+   
+}
+.item img{
+    height: 48px;
+    width:48px;
 }

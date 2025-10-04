@@ -125,7 +125,7 @@ nav a{
 .line{
     height: 5px;
     width: 60px;
-    background-color: #FFBF00;
+    background-color:#FFBF00;
     margin-bottom:10px;
 }
 .content{
@@ -139,16 +139,52 @@ nav a{
 .grid-container{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-    gap: 40px;
+    gap: 35px;
 }
 .item{
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #3a3a3a;
     background-color: #1e1e1e;
-   
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease ,boxshadow 0.3s ease;
 }
+
 .item img{
     height: 48px;
     width:48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%)  contrast(101%);
+    margin-bottom: 15px;
+}
+.item h3{
+    font-weight:500 ;
+    font-size:1rem;
+} 
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}   
+
+   /* Education */
+#education{
+      margin-top:30px;
+     
+}
+.edtech{
+     padding-left: 20px;
+}
+.year{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #a0a0a0;
+}
+.degree{
+    color: #e0e0e0;
+    font-size:1.2rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.work{
+    color: #a0a0a0;
 }

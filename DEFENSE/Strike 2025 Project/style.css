@@ -1,0 +1,106 @@
+/* ---------- Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #03030a;
+  color: #e6eef8;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ---------- Background Animation ---------- */
+.bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(600px 200px at 10% 20%, rgba(0,255,255,0.06), transparent 10%),
+    radial-gradient(600px 200px at 90% 80%, rgba(255,0,255,0.05), transparent 10%),
+    linear-gradient(180deg, rgba(10,10,20,0.6), rgba(0,0,0,0.9));
+  animation: bgShift 10s linear infinite alternate;
+  filter: blur(20px);
+  z-index: 0;
+}
+@keyframes bgShift {
+  0% { transform: translateY(-10px) scale(1); }
+  100% { transform: translateY(10px) scale(1.02); }
+}
+
+/* ---------- Layout ---------- */
+.wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 32px;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00ffff, #7f3cff);
+  display: grid;
+  place-items: center;
+  color: #020006;
+  font-weight: 700;
+  font-size: 18px;
+}
+h1 {
+  font-size: 20px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle {
+  font-size: 12px;
+  color: #9fb7ff99;
+}
+nav a {
+  color: #9fb7ff8a;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+nav a:hover { color: #fff; }
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 40px;
+  padding: 18px;
+  text-align: center;
+  color: #93a6ff88;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.02);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  nav a { display: none; }
+}

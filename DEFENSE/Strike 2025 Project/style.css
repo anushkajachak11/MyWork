@@ -13,7 +13,7 @@ body {
 }
 
 /* ---------- Background Animation ---------- */
-.bg {
+/* .bg {
   position: fixed;
   inset: 0;
   background:
@@ -27,7 +27,7 @@ body {
 @keyframes bgShift {
   0% { transform: translateY(-10px) scale(1); }
   100% { transform: translateY(10px) scale(1.02); }
-}
+} */
 
 /* ---------- Layout ---------- */
 .wrap {
@@ -77,13 +77,101 @@ nav a {
   margin-left: 16px;
   font-weight: 500;
   transition: 0.2s;
+  text-align:center;
 }
 nav a:hover { color: #fff; }
 
+.login{
+  background: linear-gradient(135deg, #00ffff, #7f3cff);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 8px 18px;
+  font-weight: bold;
+}
+.login:hover{
+    background: #007acc;
+}
 
+.join{
+    background:linear-gradient(135deg, #00ffff, #7f3cff);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.join:hover{
+   background: #007acc;
+}
 
+.code-box{
+    background: #030c19;
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    font-family: monospace;
+    box-shadow: 0 0 15px rgba(0,191,255,0.3);
+    color: #00bfff;
+}
+           /* About Section */
+.about{
+  text-align: center;
+  padding: 100px 60px;
+  background: #0b0f14;
+}
 
+.about h2{
+  font-size: 2.2rem;
+  color: white;
+}
 
+.about h2 span{
+  background: linear-gradient(90deg, #00bfff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-desc {
+  color: #aaa;
+  max-width: 800px;
+  margin: 20px auto 60px;
+  line-height: 1.6;
+}
+
+.features{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card{
+  background: #161b22;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+}
+
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.card h3{
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.card p{
+  color: #aaa;
+  font-size: 0.95rem;
+}
 
 /* ---------- Footer ---------- */
 footer {

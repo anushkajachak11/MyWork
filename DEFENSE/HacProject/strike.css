@@ -1,0 +1,250 @@
+/* Global Styles  */
+:root {
+    /* Variables (चल) - Color Palette */
+    --color-dark-bg: #121212; /* Dark background from screenshot */
+    --color-text-light: #f5f5f5;
+    --color-primary: #8a2be2; /* Violet/Purple-ish color for highlights */
+    --color-secondary: #00bcd4; /* Light blue/cyan for some elements */
+    --color-card-bg: #1c1c1c; 
+    --color-btn-login: #3a7bd5; /* Blue for Login button */
+    --color-btn-primary: #3a7bd5; /* Blue for Join Now button */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Use your preferred font */
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.container {
+    /* Maximum width  and centering */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography  */
+.highlight {
+    color: var(--color-primary); /* Highlight color */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: var(--color-btn-primary);
+    color: var(--color-text-light);
+}
+
+.btn--login {
+    background-color: var(--color-btn-login);
+    color: var(--color-text-light);
+    padding: 5px 15px;
+    font-size: 0.9em;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    background-color: var(--color-dark-bg); 
+    padding: 15px 0;
+    border-bottom: 1px solid #333; /* A slight line below header */
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__text {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--color-primary); 
+    /* The small square logo next to STRIKE is an image or icon, not text. */
+}
+
+.logo__subtext {
+    display: block;
+    font-size: 0.7em;
+    color: #aaa;
+    margin-top: -5px;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav__link {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: var(--color-primary);
+}
+
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 0 60px;
+    background-image: radial-gradient(circle at center, rgba(138, 43, 226, 0.1) 0%, rgba(18, 18, 18, 1) 50%); /* Subtle gradient effect */
+}
+
+.hero__title {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: var(--color-text-light);
+}
+
+.hero__title .highlight {
+    font-style: italic; /* The STRIKE family part seems to have a different style */
+}
+
+.hero__description {
+    font-size: 1.1em;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.hero__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--color-text-light);
+    font-size: 1.5em;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Icon Placeholders- If you don't use a library like FontAwesome */
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--color-text-light); /* Placeholder border */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+.icon--youtube { border-color: red; }
+.icon--instagram { border-color: #E1306C; }
+
+
+/* Platform Intro Section */
+.platform-intro {
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.platform-intro__text {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for wider screens */
+    gap: 30px;
+    max-width: 900px; /* To keep cards grouped */
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    min-height: 180px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.card:hover {
+    border-color: var(--color-primary);
+}
+
+.card__title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-secondary); /* Use secondary color for card titles */
+    margin-bottom: 10px;
+}
+/* Specific title colors as per screenshot hints */
+.card--dsa .card__title { color: #5aa4ae; } /* Adjust color for DSA */
+.card--ai .card__title { color: #8a70c0; } /* Adjust color for AI */
+.card--mock .card__title { color: #98fb98; } /* Adjust color for Mock */
+.card--feedback .card__title { color: #f4a261; } /* Adjust color for Feedback */
+
+.card__description {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Media Queries /*
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav__list {
+        gap: 10px;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+
+    .hero__title {
+        font-size: 2em;
+    }
+}
+
